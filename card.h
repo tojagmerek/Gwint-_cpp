@@ -9,11 +9,9 @@ private:
     int value;
     string name;
     int owner;
-
-    Card(const Card& c);
-    Card& operator=(const Card& c);
+    int row;
 public:
-    Card(int value, string name, int owner);
+    Card(int value, string name, int owner, int row);
 
     int getValue() const{
         return value;
@@ -25,6 +23,10 @@ public:
 
     int getOwner() const{
         return owner;
+    };
+
+    int getRow() const {
+        return row;
     };
 };
 

@@ -11,13 +11,10 @@ class Hand {
 private:
     vector<Card> cards;
     int owner;
-
-    Hand(const Hand& h);
-    Hand& operator=(const Hand& h);
 public:
     Hand(int owner);
 
-    void addCard(Card c) {
+    void addCard(const Card& c) {
         cards.push_back(c);
     }
 
@@ -37,5 +34,5 @@ public:
     }
 };
 
-#endiftak
+#endif
 
